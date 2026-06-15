@@ -1,0 +1,12 @@
+name = "edtech-chat"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Workers AI binding (dùng để tạo embedding)
+[ai]
+binding = "AI"
+
+# Vectorize binding (vector database)
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "edtech-docs"

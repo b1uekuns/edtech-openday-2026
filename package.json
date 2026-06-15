@@ -1,0 +1,12 @@
+{
+  "name": "edtech-rag-ingest",
+  "version": "1.0.0",
+  "description": "Script đọc PDF và upload embeddings lên Cloudflare Vectorize",
+  "type": "module",
+  "scripts": {
+    "ingest": "node scripts/ingest.js"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}

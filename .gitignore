@@ -4,6 +4,7 @@ node_modules/
 # Build output
 dist/
 .vercel/
+.wrangler/
 
 # OS files
 .DS_Store
@@ -15,3 +16,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# PDF tài liệu nội bộ (không push lên Git)
+docs/*.pdf
