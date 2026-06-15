@@ -1,0 +1,221 @@
+.gpbl-main {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* ── Breadcrumbs & Meta ── */
+.gb-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.gb-tag {
+  background: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+.gb-date {
+  color: #ffffff;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ── Hero Section ── */
+.gb-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 992px) {
+  .gb-hero {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.gb-hero__content {
+  flex: 1;
+}
+.gb-hero__title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+.gb-hero__title .text-purple { color: #a855f7; }
+
+.gb-hero__desc {
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.gb-hero__img {
+  flex: 1.2;
+}
+.gb-hero__img img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(#0f111a, #0f111a), linear-gradient(135deg, #3b82f6, #ec4899);
+}
+
+/* ── Feature Rows ── */
+.gb-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(15, 17, 26, 0.5);
+}
+@media (min-width: 992px) {
+  .gb-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.gb-section__content {
+  flex: 1;
+}
+.gb-section__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.gb-num {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #312e81;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.gb-section__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #f8fafc;
+  text-transform: uppercase;
+}
+.gb-section__text {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.gb-section__link {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.gb-section__link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.gb-section__img {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.gb-section__img img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(#0f111a, #0f111a), linear-gradient(135deg, #3b82f6, #ec4899);
+}
+
+.img-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* ── Testimonial Box ── */
+.gb-testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 992px) {
+  .gb-testimonial {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+.gb-testimonial__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.gb-testimonial__title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.gb-testimonial__box {
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.gb-testimonial__box p {
+  margin-bottom: 1rem;
+}
+.gb-testimonial__author {
+  margin-top: auto;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.gb-testimonial__img {
+  flex: 0.5;
+}
+.gb-testimonial__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(#0f111a, #0f111a), linear-gradient(135deg, #ef4444, #f97316);
+}
