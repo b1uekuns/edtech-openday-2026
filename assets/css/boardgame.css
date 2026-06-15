@@ -60,7 +60,7 @@
 .bg-hero__title .text-italic { font-style: italic; }
 
 .bg-hero__desc {
-  color: var(--subtle);
+  color: #ffffff;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -123,14 +123,14 @@
   text-transform: uppercase;
 }
 .bg-section__text {
-  color: var(--subtle);
+  color: #ffffff;
   font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 .bg-section__list {
   padding-left: 1.2rem;
-  color: var(--subtle);
+  color: #ffffff;
 }
 .bg-section__list li {
   margin-bottom: 0.5rem;
@@ -186,7 +186,7 @@
   border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 12px;
   padding: 1.5rem;
-  color: var(--subtle);
+  color: #ffffff;
   font-size: 0.95rem;
   line-height: 1.6;
   flex: 1;
