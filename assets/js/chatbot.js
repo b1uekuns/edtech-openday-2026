@@ -231,7 +231,7 @@
       if (isOpen) {
         const toggle = document.getElementById("chatbot-toggle");
         const win = document.getElementById("chatbot-window");
-        if (toggle && win && !win.contains(e.target) && !toggle.contains(e.target)) {
+        if (toggle && win && document.body.contains(e.target) && !win.contains(e.target) && !toggle.contains(e.target)) {
           toggleChat();
         }
       }

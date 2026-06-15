@@ -25,7 +25,7 @@ Nếu không tìm thấy thông tin trong tài liệu, hãy thành thật nói "
 === THÔNG TIN CHUNG ===
 Tên sự kiện: EdTech Open Day 2026
 Slogan: "Kết nối Tri thức — Kiến tạo Tương lai"
-Ngày: 31/05/2026 | Địa điểm: Hà Nội | Chi phí: Miễn phí 100%
+Ngày: 19/07/2026 | Địa điểm: Hà Nội | Chi phí: Miễn phí 100%
 
 Trả lời ngắn gọn, tối đa 3-4 câu trừ khi cần giải thích chi tiết. Dùng emoji vừa phải.`;
 
