@@ -15,6 +15,72 @@
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/gpbl.css" />
     <link rel="stylesheet" href="assets/css/chatbot.css" />
+    <style>
+      /* Thêm CSS cho phần video và Block 06 */
+      .gb-video-section {
+        margin: 3rem 0;
+      }
+      .gb-video-header {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+      .gb-video-link {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        text-transform: none;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: normal;
+      }
+      .gb-video-container {
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(59, 130, 246, 0.3);
+      }
+      .gb-video-container video {
+        width: 100%;
+        display: block;
+      }
+      .gb-block-06-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      @media (min-width: 992px) {
+        .gb-block-06-layout {
+          flex-direction: row;
+        }
+      }
+      .gb-block-06-left {
+        flex: 1.2;
+      }
+      .gb-block-06-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .gb-block-06-bottom-flex {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-start;
+        margin-top: 1.5rem;
+      }
+      .gb-block-06-bottom-text {
+        flex: 1;
+      }
+      .gb-block-06-bottom-img {
+        flex: 1;
+      }
+      .gb-block-06-bottom-img img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    </style>
   </head>
   <body>
     <!-- Background Effects -->
@@ -54,7 +120,7 @@
             </p>
           </div>
           <div class="gb-hero__img">
-            <img src="assets/img/chuongtrinhhoithao/image (86).png" alt="gPBL Group Photo" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anhgPBL 2022 - 2026/image (5).png" alt="gPBL Group Photo" />
           </div>
         </section>
 
@@ -74,10 +140,10 @@
             <a href="#" class="gb-section__link">Xem thêm</a>
           </div>
           <div class="gb-section__img">
-            <img src="assets/img/chuongtrinhhoithao/image (87).png" alt="gPBL 2022" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh1/image (6).png" alt="gPBL 2022" />
             <div class="img-grid-2">
-              <img src="assets/img/chuongtrinhhoithao/image (88).png" alt="gPBL Activity 1" />
-              <img src="assets/img/chuongtrinhhoithao/image (89).png" alt="gPBL Activity 2" />
+              <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh1/image (7).png" alt="gPBL Activity 1" />
+              <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh1/image (8).png" alt="gPBL Activity 2" />
             </div>
           </div>
         </section>
@@ -94,9 +160,12 @@
             </p>
             <a href="#" class="gb-section__link">Xem thêm</a>
           </div>
-          <div class="gb-section__img" style="flex-direction: row;">
-            <img src="assets/img/chuongtrinhhoithao/image (90).png" alt="SIT Exchange" style="flex: 2;" />
-            <img src="assets/img/chuongtrinhhoithao/image (91).png" alt="Certificates" style="flex: 1;" />
+          <div class="gb-section__img" style="flex-direction: row; gap: 1rem; align-items: stretch;">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 1rem;">
+              <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh2/0.png" alt="Certificate 1" style="flex: 1;" />
+              <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh2/image (9).png" alt="Certificate 2" style="flex: 1;" />
+            </div>
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh2/image (10).png" alt="SIT Exchange Group" style="flex: 2; object-fit: cover;" />
           </div>
         </section>
 
@@ -116,10 +185,10 @@
             <a href="#" class="gb-section__link">Xem thêm</a>
           </div>
           <div class="gb-section__img">
-            <img src="assets/img/chuongtrinhhoithao/image (86).png" alt="gPBL 2023" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh3/image (11).png" alt="gPBL 2023" />
             <div class="img-grid-2">
-              <img src="assets/img/chuongtrinhhoithao/image (87).png" alt="Activity" />
-              <img src="assets/img/chuongtrinhhoithao/image (88).png" alt="Activity" />
+              <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh3/image (1_2).png" alt="Activity" />
+              <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh3/image (1_3).png" alt="Activity" />
             </div>
           </div>
         </section>
@@ -149,8 +218,8 @@
             <a href="#" class="gb-section__link">Xem thêm</a>
           </div>
           <div class="gb-section__img">
-            <img src="assets/img/chuongtrinhhoithao/image (89).png" alt="SIT 2024" />
-            <img src="assets/img/chuongtrinhhoithao/image (90).png" alt="SIT Presentation" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh4/image (12).png" alt="SIT 2024" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh4/image (13).png" alt="SIT Presentation" />
           </div>
         </section>
 
@@ -174,7 +243,7 @@
             </div>
           </div>
           <div class="gb-testimonial__img">
-            <img src="assets/img/chuongtrinhhoithao/image (91).png" alt="Student Testimonial" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh4/0 (1).png" alt="Student Testimonial" />
           </div>
         </section>
 
@@ -194,8 +263,8 @@
             <a href="#" class="gb-section__link">Xem thêm</a>
           </div>
           <div class="gb-section__img">
-            <img src="assets/img/chuongtrinhhoithao/image (86).png" alt="gPBL 2024 Sensor" />
-            <img src="assets/img/chuongtrinhhoithao/image (87).png" alt="gPBL 2024 Activities" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh5/image (14).png" alt="gPBL 2024 Sensor" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh5/image (15).png" alt="gPBL 2024 Activities" />
           </div>
         </section>
 
@@ -204,7 +273,7 @@
           <div class="gb-section__content">
             <div class="gb-section__header">
               <div class="gb-num" style="background: #312e81;">05</div>
-              <h2 class="gb-section__title">"Global Project-Based Learning (gPBL) on IoT in the era of LLMs<br />Chương trình Học qua dự án với chủ đề Ứng dụng Internet vạn vật trong Kỷ nguyên Mô hình Ngôn ngữ lớn - 2025"</h2>
+              <h2 class="gb-section__title">"Global Project-Based Learning (gPBL) on IoT in the era of LLMs"<br />Chương trình Học qua dự án với chủ đề Ứng dụng Internet vạn vật trong Kỷ nguyên Mô hình Ngôn ngữ lớn - 2025</h2>
             </div>
             <p class="gb-section__text">
               Năm 2025, gPBL bước sang một giai đoạn mới với chủ đề “IoT in the Era of LLMs” và trí tuệ nhân tạo thế hệ mới (LLMs), giải quyết các bài toán về giáo dục, năng lượng, giao thông, môi trường và đời sống. Chương trình quy tụ gần 80 sinh viên, học viên cao học và giảng viên từ 7 trường đại học tại Việt Nam, Nhật Bản, Malaysia và Đài Loan. Chương trình hướng tới mục tiêu mở rộng cơ hội giao lưu quốc tế và trao đổi học thuật cho sinh viên.
@@ -218,8 +287,56 @@
             <a href="#" class="gb-section__link">Xem thêm</a>
           </div>
           <div class="gb-section__img">
-            <img src="assets/img/chuongtrinhhoithao/image (88).png" alt="gPBL 2025 LLMs" />
-            <img src="assets/img/chuongtrinhhoithao/image (89).png" alt="gPBL 2025 Presentation" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh6/image (16).png" alt="gPBL 2025 LLMs" />
+            <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh6/image (17).png" alt="gPBL 2025 Presentation" />
+          </div>
+        </section>
+
+        <!-- Video Recap -->
+        <div class="gb-video-section">
+          <div class="gb-video-header">
+            [RECAP CHƯƠNG TRÌNH GPBL 2025] <a href="#" class="gb-video-link">Xem thêm</a>
+          </div>
+          <div class="gb-video-container">
+            <video controls poster="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh6/image (16).png">
+              <source src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/RECAP CHUONG TRINH gPBL 2025.mp4" type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ video.
+            </video>
+          </div>
+        </div>
+
+        <!-- Section 6 -->
+        <section class="gb-section">
+          <div class="gb-block-06-layout">
+            <div class="gb-block-06-left">
+              <div class="gb-section__header">
+                <div class="gb-num" style="background: #1e3a8a;">06</div>
+                <h2 class="gb-section__title">Global Project-Based Learning 2026 - Multidisciplinary Innovation for Sustainable Future</h2>
+              </div>
+              <p class="gb-section__text">
+                Năm 2026 gPBL đã trở thành diễn đàn học thuật quốc tế với sự góp mặt của các trường đại học đến từ Nhật Bản, Đài Loan, Thái Lan, Ấn Độ, Ý và Việt Nam. Chủ đề năm 2026 là “Multidisciplinary Innovation for Sustainable Future”, hướng đến các giải pháp liên ngành cho phát triển bền vững toàn cầu.
+              </p>
+              <p class="gb-section__text">
+                Hơn 70 sinh viên quốc tế cùng làm việc trong các nhóm đa quốc gia, đa lĩnh vực để giải quyết những thách thức về môi trường, giáo dục và xã hội. Các dự án không chỉ được đánh giá bởi giảng viên các trường đối tác mà còn nhận phản biện trực tiếp từ các chuyên gia quốc tế. Trong khuôn khổ chương trình đoàn sinh viên Khoa Khoa học và Công nghệ Giáo dục đã tham gia buổi Workshop đặc biệt về Yukata - trang phục truyền thống đặc trưng của xứ sở hoa anh đào. Tại đó, các bạn sinh viên không chỉ được cung cấp những kiến thức chuyên sâu về nguồn gốc, ý nghĩa lịch sử của Yukata qua các thời kỳ, mà còn trực tiếp thực hành cách mặc trang phục đúng chuẩn dưới sự hướng dẫn của các bạn Sinh viên SIT.
+              </p>
+              
+              <div class="gb-block-06-bottom-flex">
+                <div class="gb-block-06-bottom-text">
+                  <p class="gb-section__text">
+                    Đặc biệt, sinh viên ED2 còn nhận được nhiều cơ hội học bổng trao đổi tại Nhật Bản, tham gia nghiên cứu cùng các giáo sư quốc tế và mở rộng mạng lưới học thuật trên toàn thế giới.
+                  </p>
+                  <a href="#" class="gb-section__link">Xem thêm</a>
+                </div>
+                <div class="gb-block-06-bottom-img">
+                  <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh6/image (20).png" alt="Yukata Experience" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="gb-block-06-right">
+              <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh6/image (18).png" alt="gPBL 2026 Group" style="width: 100%; border-radius: 12px;" />
+              <img src="assets/img/chuongtrinhhoithao/chuongtrinhtraodoi/anh6/image (19).png" alt="gPBL 2026 Activity" style="width: 100%; border-radius: 12px;" />
+            </div>
           </div>
         </section>
 
