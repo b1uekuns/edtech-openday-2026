@@ -226,6 +226,17 @@
     // Toggle open/close
     document.getElementById("chatbot-toggle").addEventListener("click", toggleChat);
 
+    // Close when clicking outside
+    document.addEventListener("click", (e) => {
+      if (isOpen) {
+        const toggle = document.getElementById("chatbot-toggle");
+        const win = document.getElementById("chatbot-window");
+        if (toggle && win && !win.contains(e.target) && !toggle.contains(e.target)) {
+          toggleChat();
+        }
+      }
+    });
+
     // Send button
     document.getElementById("chatbot-send").addEventListener("click", () => sendMessage());
 
