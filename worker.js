@@ -73,45 +73,15 @@ async function retrieveContext(query, env, topK = 5) {
 
 // ── CALL LLM ─────────────────────────────────────────────────────────────────
 async function callLLM(messages, env) {
-  if (LLM_PROVIDER === "groq") {
-    const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${env.GROQ_API_KEY}`,
-      },
-      body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages,
-        temperature: 0.5,
-        max_tokens: 512,
-      }),
+  try {
+    const response = await env.AI.run("@cf/meta/llama-3.3-70b-instruct-fp8-fast", {
+      messages,
+      max_tokens: 512,
     });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data?.error?.message || `Groq ${res.status}`);
-    return data.choices[0].message.content;
-  } else {
-    // Gemini
-    const contents = messages
-      .filter((m) => m.role !== "system")
-      .map((m) => ({
-        role: m.role === "assistant" ? "model" : "user",
-        parts: [{ text: m.content }],
-      }));
-
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${env.GEMINI_API_KEY}`;
-    const res = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        system_instruction: { parts: [{ text: messages[0].content }] },
-        contents,
-        generationConfig: { temperature: 0.5, maxOutputTokens: 512 },
-      }),
-    });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data?.error?.message || `Gemini ${res.status}`);
-    return data.candidates[0].content.parts[0].text;
+    return response.response;
+  } catch (err) {
+    console.error("Workers AI LLM Error:", err);
+    throw new Error("Lỗi Cloudflare AI: " + err.message);
   }
 }
 
