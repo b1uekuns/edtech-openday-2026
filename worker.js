@@ -12,7 +12,7 @@
 
 // ── CẤU HÌNH LLM ─────────────────────────────────────────────────────────────
 // Đổi thành "groq" nếu muốn dùng Groq thay Gemini
-const LLM_PROVIDER = "gemini"; // "gemini" | "groq"
+const LLM_PROVIDER = "groq"; // "gemini" | "groq"
 
 // ── SYSTEM PROMPT ─────────────────────────────────────────────────────────────
 const SYSTEM_PROMPT = `Bạn là trợ lý AI của CLB EdTech — câu lạc bộ Công nghệ Giáo dục.

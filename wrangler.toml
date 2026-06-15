@@ -2,6 +2,9 @@ name = "edtech-chat"
 main = "worker.js"
 compatibility_date = "2025-01-01"
 
+[placement]
+mode = "smart"
+
 # Workers AI binding (dùng để tạo embedding)
 [ai]
 binding = "AI"
