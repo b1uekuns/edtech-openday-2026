@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Đăng ký tham gia — EdTech Open Day 2026</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Cabinet+Grotesk:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/utils.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/register.css" />
+  </head>
+
+  <body>
+    <!-- ════ BACKGROUND FX ════ -->
+    <div class="bg-aurora" aria-hidden="true">
+      <div class="ab ab1"></div>
+      <div class="ab ab2"></div>
+      <div class="ab ab3"></div>
+    </div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <div class="site">
+      <!-- ════════════════════════════════════
+         NAV
+    ═════════════════════════════════════ -->
+      <header class="nav register-nav" role="banner">
+        <div class="nav__logo">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <defs>
+              <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#818cf8" />
+                <stop offset="100%" stop-color="#a78bfa" />
+              </linearGradient>
+            </defs>
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg>
+          <div class="nav__logo-text">
+            <div class="nav__logo-main">EdTech</div>
+            <div class="nav__logo-sub">OPEN DAY</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <a href="index.html" class="btn btn--outline btn--back">
+            ← Quay lại trang chủ
+          </a>
+        </div>
+      </header>
+
+      <!-- ════════════════════════════════════
+         REGISTER HERO
+    ═════════════════════════════════════ -->
+      <section class="register-hero">
+        <div class="register-hero__badge">ĐĂNG KÝ THAM GIA</div>
+        <h1 class="register-hero__title">
+          OPEN DAY<br />
+          <span class="text-gradient">CÔNG NGHỆ GIÁO DỤC ED2</span>
+        </h1>
+        <p class="register-hero__desc">
+          Khám phá xu hướng Công nghệ Giáo dục, trải nghiệm thực tế các sản phẩm EdTech, kết nối chuyên gia, giảng viên và doanh nghiệp hàng đầu.
+        </p>
+
+        <!-- Floating Elements -->
+        <div class="floating-icons">
+           <div class="icon-hex">ED2</div>
+           <!-- Placeholder for other icons from the image -->
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════
+         REGISTER FORM
+    ═════════════════════════════════════ -->
+      <section class="register-container">
+        <div class="register-panel">
+          <div class="register-panel__header">
+            <span class="icon-cal">🗓️</span>
+            <h2>THÔNG TIN ĐĂNG KÝ</h2>
+          </div>
+
+          <form id="register-form" class="register-form">
+            
+            <div class="form-group full-width">
+              <label for="fullname">Họ và tên <span class="required">*</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên của bạn" required>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Số điện thoại <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="role">Bạn là <span class="required">*</span></label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Chọn đối tượng tham gia</option>
+                <option value="student">Học sinh / Sinh viên</option>
+                <option value="teacher">Giáo viên / Giảng viên</option>
+                <option value="business">Doanh nghiệp</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="organization">Trường / Đơn vị công tác</label>
+              <input type="text" id="organization" name="organization" placeholder="Nhập tên trường hoặc đơn vị của bạn">
+            </div>
+
+            <div class="form-group full-width">
+              <label>Bạn quan tâm đến chủ đề nào nhất? <span>(Chọn 1 hoặc nhiều)</span></label>
+              <div class="checkbox-grid">
+                <label class="checkbox-card"><input type="checkbox" name="topic" value="AI"><span>AI trong giáo dục</span></label>
+                <label class="checkbox-card"><input type="checkbox" name="topic" value="Design"><span>Thiết kế bài giảng số</span></label>
+                <label class="checkbox-card"><input type="checkbox" name="topic" value="LMS"><span>LMS & E-learning</span></label>
+                <label class="checkbox-card"><input type="checkbox" name="topic" value="Game"><span>Game hóa học tập</span></label>
+                <label class="checkbox-card"><input type="checkbox" name="topic" value="ARVR"><span>AR/VR trong dạy học</span></label>
+                <label class="checkbox-card"><input type="checkbox" name="topic" value="STEM"><span>STEM & Robotics</span></label>
+              </div>
+            </div>
+
+
+
+            <div class="form-group full-width">
+              <label for="source">Bạn biết đến sự kiện qua đâu?</label>
+              <select id="source" name="source">
+                <option value="" disabled selected>Chọn nguồn thông tin</option>
+                <option value="facebook">Facebook / Fanpage</option>
+                <option value="website">Website trường/khoa</option>
+                <option value="friend">Bạn bè giới thiệu</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="note">Ghi chú thêm (nếu có)</label>
+              <textarea id="note" name="note" placeholder="Nhập nội dung bạn muốn chia sẻ thêm với BTC..." rows="3"></textarea>
+            </div>
+
+            <div class="form-group full-width agreement-group">
+              <label class="checkbox-simple">
+                <input type="checkbox" required>
+                <span>Tôi đồng ý với việc cung cấp thông tin và nhận thông tin từ chương trình Open Day ED2.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--submit full-width">
+              ĐĂNG KÝ THAM GIA →
+            </button>
+          </form>
+
+          <div class="register-footer-note">
+            <span class="icon-lock">🔒</span> Thông tin của bạn được bảo mật tuyệt đối.
+          </div>
+        </div>
+      </section>
+
+      <!-- CUSTOM MODAL -->
+      <div id="success-modal" class="custom-modal hidden">
+        <div class="custom-modal__backdrop"></div>
+        <div class="custom-modal__content">
+          <div class="custom-modal__icon">✅</div>
+          <h3 class="custom-modal__title">Đăng ký thành công!</h3>
+          <p class="custom-modal__desc">Thông tin của bạn đã được ghi nhận. Hệ thống sẽ gửi email xác nhận trong thời gian sớm nhất.</p>
+          <button id="close-modal" class="btn btn--primary" style="text-align: center;">Đóng</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- /site -->
+
+    <!-- JS -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwwEPPKXxqnRJLkpNIeViwZxothTr8_XqVzBh2oHpQN6eLQn4OGqh6ZGSnCCZlfVmJxqQ/exec";
+
+      const modal = document.getElementById('success-modal');
+      const closeModalBtn = document.getElementById('close-modal');
+
+      closeModalBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+
+      document.getElementById('register-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const btn = this.querySelector('button[type="submit"]');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = 'ĐANG GỬI... ⏳';
+        btn.style.opacity = '0.8';
+        btn.disabled = true;
+
+        // Xử lý dữ liệu form
+        const formData = new FormData(this);
+        const data = {};
+        const topics = [];
+        
+        for (let [key, value] of formData.entries()) {
+          if (key === 'topic') {
+            topics.push(value);
+          } else {
+            data[key] = value;
+          }
+        }
+        data.topic = topics.join(', '); // Nối các chủ đề bằng dấu phẩy
+
+        // Chuyển data thành dạng URLSearchParams để gửi
+        const params = new URLSearchParams(data);
+
+        // Gửi tới Google Sheets
+        fetch(SCRIPT_URL, {
+          method: 'POST',
+          body: params,
+        })
+        .then(response => {
+          modal.classList.remove('hidden');
+          this.reset();
+        })
+        .catch(error => {
+          console.log("Submit details:", error);
+          modal.classList.remove('hidden');
+          this.reset();
+        })
+        .finally(() => {
+          btn.innerHTML = originalText;
+          btn.style.opacity = '1';
+          btn.disabled = false;
+        });
+      });
+    </script>
+  </body>
+</html>

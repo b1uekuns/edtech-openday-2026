@@ -1,0 +1,364 @@
+/* ════════════════════════════════════
+   REGISTER PAGE CSS
+═════════════════════════════════════ */
+
+/* Header */
+.register-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+}
+.btn--back {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 0.9rem;
+  border-radius: var(--r-sm);
+  padding: 0.6rem 1rem;
+  transition: all var(--dur) var(--ease);
+  text-decoration: none;
+}
+.btn--back:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero */
+.register-hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.register-hero__badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  color: var(--violet);
+  border-radius: var(--r-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+.register-hero__title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.text-gradient {
+  background: linear-gradient(90deg, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+.register-hero__desc {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Floating Elements (Placeholder styling) */
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+.icon-hex {
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  width: 120px;
+  height: 130px;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="none" stroke="%235b6af5" stroke-width="2"/></svg>') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #818cf8;
+  opacity: 0.7;
+}
+
+/* Form Container */
+.register-container {
+  padding: 0 1rem 5rem;
+}
+.register-panel {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(10, 15, 30, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  border-radius: var(--r-xl);
+  padding: 2.5rem 3rem;
+  box-shadow: 0 0 40px rgba(91, 106, 245, 0.15), inset 0 0 20px rgba(167, 139, 250, 0.05);
+}
+
+.register-panel__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.register-panel__header h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+.icon-cal {
+  font-size: 1.6rem;
+}
+
+/* Form Groups */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #f0f4ff;
+}
+.form-group label span.required {
+  color: #ef4444;
+}
+.form-group label span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* Form Inputs */
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form select,
+.register-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+.register-form input::placeholder,
+.register-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+  outline: none;
+  border-color: var(--violet);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+}
+.register-form select option {
+  background: #0f172a;
+  color: #fff;
+}
+
+/* Checkbox Grids */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.checkbox-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.checkbox-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.checkbox-card input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--violet);
+  cursor: pointer;
+}
+.checkbox-card span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.checkbox-card:has(input:checked) {
+  background: rgba(167, 139, 250, 0.1);
+  border-color: var(--violet);
+}
+.checkbox-card:has(input:checked) span {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Agreement Checkbox */
+.agreement-group {
+  margin-top: 1rem;
+}
+.checkbox-simple {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+.checkbox-simple input {
+  margin-top: 0.2rem;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--violet);
+}
+.checkbox-simple span {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Submit Button */
+.btn--submit {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+  transition: all 0.3s ease;
+}
+.btn--submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+/* Footer Note */
+.register-footer-note {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.icon-lock {
+  margin-right: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .checkbox-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .form-group-row {
+    grid-template-columns: 1fr;
+  }
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+  .register-panel {
+    padding: 1.5rem;
+  }
+}
+
+/* Custom Modal */
+.custom-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.custom-modal.hidden {
+  display: none;
+}
+.custom-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+}
+.custom-modal__content {
+  position: relative;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  border-radius: var(--r-xl);
+  padding: 3rem 2rem;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(167, 139, 250, 0.1);
+  animation: modalPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+@keyframes modalPop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.custom-modal__icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  animation: checkBounce 0.5s 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@keyframes checkBounce {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+.custom-modal__title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+.custom-modal__desc {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.custom-modal .btn {
+  width: 100%;
+}

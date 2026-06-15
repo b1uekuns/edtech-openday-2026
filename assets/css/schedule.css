@@ -1,0 +1,67 @@
+/* ============================================================
+   schedule.css — Schedule list / items
+   ============================================================ */
+
+.sched-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sched-item {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  gap: 1.1rem;
+  align-items: start;
+  padding: 1.1rem 1.3rem;
+  background: rgba(var(--glass-rgb), 0.04);
+  border: 1px solid rgba(var(--glass-rgb), 0.08);
+  border-radius: var(--r-md);
+  box-shadow: inset 0 1px 0 rgba(var(--glass-rgb), 0.07);
+  backdrop-filter: blur(20px) saturate(165%);
+  -webkit-backdrop-filter: blur(20px) saturate(165%);
+  transition: all 0.28s ease;
+  position: relative;
+  overflow: hidden;
+}
+.sched-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.28s;
+}
+.sched-item:hover {
+  background: rgba(var(--glass-rgb), 0.065);
+  border-color: rgba(var(--glass-rgb), 0.12);
+  transform: translateX(4px);
+}
+.sched-item:hover::before { opacity: 1; }
+
+.sched-item--indigo { color: #818cf8; }
+.sched-item--cyan    { color: var(--cyan); }
+.sched-item--emerald { color: var(--emerald); }
+.sched-item--amber   { color: var(--amber); }
+.sched-item--rose    { color: var(--rose); }
+.sched-item--violet  { color: var(--violet); }
+
+.sched-item__time {
+  font-size: 0.72rem;
+  color: var(--cyan);
+  font-weight: 600;
+  padding-top: 0.12rem;
+}
+.sched-item__name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+.sched-item__desc {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.5;
+}

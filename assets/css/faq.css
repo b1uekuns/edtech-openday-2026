@@ -1,0 +1,55 @@
+/* ============================================================
+   faq.css — FAQ accordion
+   ============================================================ */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.faq-item {
+  background: rgba(var(--glass-rgb), 0.04);
+  border: 1px solid rgba(var(--glass-rgb), 0.08);
+  box-shadow: inset 0 1px 0 rgba(var(--glass-rgb), 0.07);
+  backdrop-filter: blur(18px);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.faq-item__q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.05rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.88rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  transition: background 0.2s;
+}
+.faq-item__q:hover { background: rgba(var(--glass-rgb), 0.03); }
+.faq-item__chevron {
+  transition: transform 0.3s;
+  color: var(--muted);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.faq-item__a {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s var(--ease),
+    padding 0.3s;
+  padding: 0 1.25rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.faq-item.open .faq-item__a {
+  max-height: 180px;
+  padding: 0.05rem 1.25rem 1.05rem;
+}
+.faq-item.open .faq-item__chevron { transform: rotate(45deg); }

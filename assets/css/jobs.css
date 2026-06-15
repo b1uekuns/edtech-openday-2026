@@ -1,0 +1,206 @@
+/* ============================================================
+   jobs.css — Job Opportunities page styles
+   ============================================================ */
+
+.jobs-main {
+  padding: 4rem 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ── BREADCRUMB ── */
+.jobs-breadcrumb {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.jobs-breadcrumb a {
+  color: var(--indigo);
+  text-decoration: none;
+  font-weight: 500;
+}
+.jobs-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* ── HEADER META ── */
+.jobs-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.jobs-tag {
+  background: rgba(91, 106, 245, 0.15);
+  color: var(--indigo);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1px solid rgba(91, 106, 245, 0.3);
+}
+.jobs-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+}
+
+/* ── HERO SECTION ── */
+.jobs-hero {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+.jobs-hero__content {
+  flex: 1;
+}
+.jobs-hero__title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.jobs-hero__title span {
+  color: var(--violet);
+}
+.jobs-hero__desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.jobs-hero__img {
+  flex: 1;
+}
+.jobs-hero__img img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-lg);
+}
+
+/* ── JOB CARDS ── */
+.job-card {
+  display: flex;
+  background: rgba(10, 14, 36, 0.4);
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  border-radius: var(--r-lg);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  gap: 3rem;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(167, 139, 250, 0.3);
+}
+.job-card--col {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.job-card__content {
+  flex: 1;
+}
+.job-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.job-card__num {
+  background: rgba(91, 106, 245, 0.8);
+  color: #fff;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.job-card__title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+}
+.job-card__desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+.job-card__desc p {
+  margin-bottom: 1rem;
+}
+.job-card__desc p:last-child {
+  margin-bottom: 0;
+}
+.job-card__img {
+  flex: 1;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  /* Optional gradient overlay */
+  position: relative;
+}
+.job-card__img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── LOGO GRID ── */
+.job-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.job-logo {
+  background: #fff;
+  border-radius: var(--r-md);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+/* Style for custom colored backgrounds for logos if needed */
+.job-logo--blue { background: #002DFA; }
+.job-logo--darkblue { background: #2A317B; }
+.job-logo--red { background: #ED1B24; }
+.job-logo--black { background: #000; }
+
+.job-logo img {
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .jobs-hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .jobs-hero__title {
+    font-size: 2rem;
+  }
+  .job-card {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .job-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

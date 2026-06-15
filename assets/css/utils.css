@@ -1,0 +1,153 @@
+/* ============================================================
+   utils.css — Glass · Buttons · Tags · Badges · Live dot
+   ============================================================ */
+
+/* ══════════════════════════════════════════
+   GLASS UTILITY CLASSES
+   ══════════════════════════════════════════ */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-inset), var(--shadow-sm);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+.glass:hover {
+  background: var(--glass-bg-h);
+  border-color: var(--glass-border-h);
+}
+.glass--heavy {
+  background: rgba(var(--glass-rgb), 0.055);
+  border: 1px solid rgba(var(--glass-rgb), 0.12);
+  box-shadow:
+    inset 0 1.5px 0 rgba(var(--glass-rgb), 0.13),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+    var(--shadow-lg);
+  backdrop-filter: var(--glass-blur-hv);
+  -webkit-backdrop-filter: var(--glass-blur-hv);
+}
+
+/* ══════════════════════════════════════════
+   BUTTONS
+   ══════════════════════════════════════════ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: none;
+  border-radius: var(--r-pill);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: all var(--dur) var(--ease);
+  white-space: nowrap;
+}
+.btn--primary {
+  padding: 0.78rem 1.7rem;
+  background: linear-gradient(135deg, var(--indigo), var(--violet));
+  color: var(--text-main);
+  box-shadow:
+    var(--glow-ind),
+    inset 0 1px 0 rgba(var(--glass-rgb), 0.2);
+}
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    var(--glow-ind-h),
+    inset 0 1px 0 rgba(var(--glass-rgb), 0.2);
+}
+.btn--ghost {
+  padding: 0.78rem 1.5rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-inset);
+  backdrop-filter: blur(12px);
+  color: var(--text);
+}
+.btn--ghost:hover {
+  background: var(--glass-bg-h);
+  border-color: var(--glass-border-h);
+  transform: translateY(-1px);
+}
+.btn--sm {
+  padding: 0.42rem 1.1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: rgba(91, 106, 245, 0.1);
+  border: 1px solid rgba(91, 106, 245, 0.22);
+  box-shadow: inset 0 1px 0 rgba(var(--glass-rgb), 0.06);
+  backdrop-filter: blur(8px);
+  color: #a5b4fc;
+}
+.btn--sm:hover {
+  background: rgba(91, 106, 245, 0.18);
+  transform: translateY(-1px);
+}
+
+/* ══════════════════════════════════════════
+   TAGS / BADGES
+   ══════════════════════════════════════════ */
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--r-pill);
+  font-size: 0.62rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+}
+.tag--indigo {
+  background: rgba(129, 140, 248, 0.12);
+  color: #a5b4fc;
+  border: 1px solid rgba(129, 140, 248, 0.22);
+}
+.tag--cyan {
+  background: rgba(34, 211, 238, 0.1);
+  color: #67e8f9;
+  border: 1px solid rgba(34, 211, 238, 0.18);
+}
+.tag--emerald {
+  background: rgba(52, 211, 153, 0.1);
+  color: #6ee7b7;
+  border: 1px solid rgba(52, 211, 153, 0.15);
+}
+.tag--amber {
+  background: rgba(251, 191, 36, 0.1);
+  color: #fcd34d;
+  border: 1px solid rgba(251, 191, 36, 0.15);
+}
+.tag--rose {
+  background: rgba(251, 113, 132, 0.1);
+  color: #fca5a5;
+  border: 1px solid rgba(251, 113, 132, 0.15);
+}
+
+/* ══════════════════════════════════════════
+   LIVE BADGE / DOTS
+   ══════════════════════════════════════════ */
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.45rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--r-pill);
+  background: rgba(34, 211, 238, 0.07);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  box-shadow: inset 0 1px 0 rgba(var(--glass-rgb), 0.06);
+  backdrop-filter: blur(12px);
+  color: #67e8f9;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--emerald);
+  box-shadow: 0 0 6px var(--emerald);
+  animation: livePulse 1.5s ease infinite;
+}
+.live-dot--rose {
+  background: var(--rose);
+  box-shadow: 0 0 6px var(--rose);
+}
