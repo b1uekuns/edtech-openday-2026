@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tập huấn và bổ trợ kỹ năng - EdTech Open Day 2026</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Cabinet+Grotesk:wght@700;800;900&family=Space+Grotesk:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/utils.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/news.css" />
+    <link rel="stylesheet" href="assets/css/chatbot.css" />
+    <style>
+      .taphuan-hero-title {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+      }
+      .taphuan-hero-title .text-accent {
+        background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .taphuan-desc {
+        color: #fff !important;
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+      .gradient-border-img {
+        padding: 4px;
+        border-radius: 1rem;
+        display: inline-block;
+        width: 100%;
+      }
+      .gradient-border-img img {
+        border-radius: calc(1rem - 4px);
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .video-section {
+        margin-top: 4rem;
+        padding: 2rem 0;
+      }
+      .video-section-title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        font-family: "Space Grotesk", sans-serif;
+        text-transform: uppercase;
+      }
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      @media (max-width: 768px) {
+        .video-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .video-card {
+        background: rgba(var(--glass-rgb), 0.03);
+        border: 1px solid rgba(var(--glass-rgb), 0.1);
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+      }
+      .video-card video {
+        width: 100%;
+        display: block;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        background: #000;
+      }
+      .video-title-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: white;
+        text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Effects -->
+    <div class="blob blob--1" aria-hidden="true"></div>
+    <div class="blob blob--2" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <div class="site">
+      <!-- Nav -->
+      <div id="header-placeholder"></div>
+
+      <!-- Main Content -->
+      <main class="news-main rv">
+        <!-- Breadcrumbs -->
+        <div class="news-breadcrumb">
+          <a href="index.html">🏠 Trang chủ</a> <span class="separator">/</span>
+          <span class="current">Tập huấn và bổ trợ kỹ năng</span>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="news-block">
+          <div class="news-block__content">
+            <h1 class="taphuan-hero-title">
+              TẬP HUẤN KĨ NĂNG ỨNG DỤNG TƯ DUY THIẾT KẾ <br />
+              <span class="text-accent">TRONG PHÁT TRIỂN HỌC LIỆU ĐIỆN TỬ</span>
+            </h1>
+            <p class="taphuan-desc">
+              Tại Khoa Khoa học và Công nghệ Giáo dục, Đại học Bách khoa Hà Nội,
+              sinh viên không chỉ được trang bị kiến thức về khoa học giáo dục,
+              công nghệ thông tin, truyền thông đa phương tiện mà còn được tham
+              gia các dự án thực tế cùng doanh nghiệp, chương trình trao đổi
+              quốc tế và nghiên cứu khoa học. Nhờ đó, sinh viên có thể đảm nhận
+              nhiều vị trí việc làm đa dạng ngay sau khi tốt nghiệp.
+            </p>
+          </div>
+          <div
+            class="news-block__image"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: unset;
+            "
+          >
+            <div
+              class="gradient-border-img"
+              style="background: linear-gradient(135deg, #a855f7, #ec4899)"
+            >
+              <img src="assets/img/taphuan/image58.png" alt="Tập huấn" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 01 -->
+        <div class="news-block glass-panel">
+          <div class="news-block__content">
+            <h2 class="block-title">
+              <span class="block-num">01</span> TRANG BỊ TƯ DUY THIẾT KẾ TRONG
+              PHÁT TRIỂN HỌC LIỆU SỐ
+            </h2>
+            <p>
+              Chương trình tập huấn được xây dựng với mục tiêu giúp sinh viên
+              hiểu rõ cách vận dụng tư duy thiết kế (Design Thinking) vào quá
+              trình xây dựng học liệu điện tử, từ việc xác định nhu cầu của
+              người học đến thiết kế các trải nghiệm học tập hiệu quả và hấp
+              dẫn, được triển khai từ năm 2025 đến nay.
+            </p>
+            <p>
+              Thông qua các buổi tập huấn, sinh viên được tiếp cận với những
+              kiến thức nền tảng về tư duy thiết kế bài giảng điện tử tương tác,
+              phương pháp xây dựng nội dung học tập lấy người học làm trung tâm,
+              đồng thời tìm hiểu cách khai thác và sử dụng hiệu quả các tài
+              nguyên giáo dục mở trong quá trình phát triển học liệu.
+            </p>
+            <p>
+              Không chỉ dừng lại ở lý thuyết, chương trình chú trọng các hoạt
+              động trao đổi, thảo luận nhóm và thực hành nhằm giúp người học
+              từng bước hình thành tư duy thiết kế linh hoạt, sáng tạo và có khả
+              năng ứng dụng vào các sản phẩm giáo dục thực tế.
+            </p>
+          </div>
+          <div
+            class="news-block__image"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: unset;
+            "
+          >
+            <div
+              class="gradient-border-img"
+              style="
+                background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+              "
+            >
+              <img
+                src="assets/img/taphuan/image59.png"
+                alt="Trang bị tư duy thiết kế"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 02 -->
+        <div class="news-block glass-panel">
+          <div class="news-block__content">
+            <h2 class="block-title">
+              <span class="block-num">02</span> THỰC HÀNH VỚI STORYLINE 360 –
+              CÔNG CỤ THIẾT KẾ HỌC LIỆU ĐIỆN TỬ
+            </h2>
+            <p>
+              Một trong những nội dung trọng tâm của chương trình là hướng dẫn
+              sinh viên sử dụng Storyline 360 – nền tảng được nhiều doanh nghiệp
+              EdTech và đơn vị phát triển học liệu số sử dụng trong thiết kế các
+              khóa học trực tuyến và bài giảng điện tử tương tác.
+            </p>
+            <p>
+              Dưới sự hướng dẫn của giảng viên cùng đội ngũ trợ giảng và tình
+              nguyện viên, sinh viên được trực tiếp trải nghiệm quá trình xây
+              dựng học liệu điện tử từ những bước cơ bản đến nâng cao. Các bạn
+              được thực hành thiết kế nội dung tương tác, xây dựng các tình
+              huống học tập, tối ưu trải nghiệm người học và từng bước phát
+              triển sản phẩm học liệu mang dấu ấn cá nhân.
+            </p>
+          </div>
+          <div
+            class="news-block__image"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: unset;
+            "
+          >
+            <div
+              class="gradient-border-img"
+              style="background: linear-gradient(135deg, #3b82f6, #ec4899)"
+            >
+              <img src="assets/img/taphuan/image60.png" alt="Storyline 360" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 03 -->
+        <div class="news-block glass-panel">
+          <div class="news-block__content">
+            <h2 class="block-title">
+              <span class="block-num">03</span> KẾT NỐI ĐÀO TẠO VỚI THỰC TIỄN
+              DOANH NGHIỆP
+            </h2>
+            <p>
+              Điểm nhấn nổi bật của chương trình là sự tham gia đồng hành của
+              doanh nghiệp trong lĩnh vực công nghệ giáo dục. Trong khóa tập
+              huấn năm 2025, sinh viên đã có cơ hội gặp gỡ đại diện Công ty Cổ
+              phần Giáo dục iDeas và lắng nghe những chia sẻ thực tiễn về xu
+              hướng phát triển học liệu điện tử, các dự án giáo dục số cũng như
+              nhu cầu nhân lực trong lĩnh vực này.
+            </p>
+            <p>
+              Tại chương trình, PGS.TS. Lê Hiếu Học – Trưởng Khoa Khoa học và
+              Công nghệ Giáo dục đã nhấn mạnh tầm quan trọng của việc gắn kết
+              kiến thức học thuật với thực tiễn nghề nghiệp, đồng thời khuyến
+              khích sinh viên chủ động vận dụng những kiến thức được học để tạo
+              ra các sản phẩm giáo dục có giá trị thực tiễn.
+            </p>
+          </div>
+          <div
+            class="news-block__image"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: unset;
+            "
+          >
+            <div
+              class="gradient-border-img"
+              style="background: linear-gradient(135deg, #a855f7, #6366f1)"
+            >
+              <img
+                src="assets/img/taphuan/image62.png"
+                alt="Kết nối doanh nghiệp"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 04 -->
+        <div class="news-block glass-panel">
+          <div class="news-block__content">
+            <h2 class="block-title">
+              <span class="block-num">04</span> HÀNH TRANG CHO SINH VIÊN TRONG
+              KỶ NGUYÊN SỐ
+            </h2>
+            <p>
+              Chương trình tập huấn “Kỹ năng ứng dụng Tư duy thiết kế trong phát
+              triển học liệu điện tử” là một trong những hoạt động tiêu biểu của
+              Khoa Khoa học và Công nghệ Giáo dục nhằm tăng cường năng lực nghề
+              nghiệp cho sinh viên, đồng thời đáp ứng yêu cầu phát triển nguồn
+              nhân lực chất lượng cao trong thời đại chuyển đổi số.
+            </p>
+            <p>
+              Thông qua chương trình, sinh viên được tiếp cận những phương pháp
+              thiết kế hiện đại, làm chủ các công cụ phát triển học liệu điện tử
+              và hiểu rõ hơn về quy trình xây dựng các sản phẩm giáo dục số. Đây
+              sẽ là nền tảng quan trọng giúp các bạn sinh viên tự tin tham gia
+              vào thị trường lao động trong lĩnh vực công nghệ giáo dục, thiết
+              kế đào tạo và phát triển nội dung học tập số trong tương lai.
+            </p>
+          </div>
+          <div
+            class="news-block__image"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: unset;
+            "
+          >
+            <div
+              class="gradient-border-img"
+              style="background: linear-gradient(135deg, #ec4899, #a855f7)"
+            >
+              <img
+                src="assets/img/taphuan/image62.png"
+                alt="Hành trang sinh viên"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Recap Section -->
+        <div class="video-section">
+          <h2 class="video-section-title">
+            RECAP TẬP HUẤN "KỸ NĂNG ỨNG DỤNG TƯ DUY THIẾT KẾ TRONG PHÁT TRIỂN
+            HỌC LIỆU ĐIỆN TỬ"
+          </h2>
+          <div class="video-grid">
+            <div class="video-card">
+              <video
+                id="vid1"
+                src="assets/img/taphuan/FSave_Reels_Khoa-Tap-huan-ki-nang-ung-dung-tu-duy-th_Media_1740348857371370_001_720p.mp4"
+                controls
+              ></video>
+              <div class="video-title-overlay" id="vid-title-1">
+                Tháng 10 năm 2025
+              </div>
+            </div>
+            <div class="video-card">
+              <video
+                id="vid2"
+                src="assets/img/taphuan/FSave_Reels_RECAP-TAP-HUAN-Ky-nang-ung-dung-Tu-duy-t_Media_845500521979835_002_720p.mp4"
+                controls
+              ></video>
+              <div class="video-title-overlay" id="vid-title-2">
+                Tháng 4 năm 2026
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="divider"></div>
+
+      <!-- Footer -->
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- JS -->
+    <script>
+      // Hide title overlay when video plays
+      document.getElementById("vid1").addEventListener("play", function () {
+        document.getElementById("vid-title-1").style.opacity = "0";
+      });
+      document.getElementById("vid1").addEventListener("pause", function () {
+        document.getElementById("vid-title-1").style.opacity = "1";
+      });
+
+      document.getElementById("vid2").addEventListener("play", function () {
+        document.getElementById("vid-title-2").style.opacity = "0";
+      });
+      document.getElementById("vid2").addEventListener("pause", function () {
+        document.getElementById("vid-title-2").style.opacity = "1";
+      });
+    </script>
+    <script src="assets/js/scroll-reveal.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+    <button
+      class="back-to-top"
+      aria-label="Lên đầu trang"
+      title="Lên đầu trang"
+    >
+      ⬆
+    </button>
+  </body>
+</html>
