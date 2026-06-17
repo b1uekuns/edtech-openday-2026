@@ -17,7 +17,7 @@
 @media (min-width: 992px) {
   .seminars-hero {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 .seminars-hero__content {
@@ -80,7 +80,7 @@
 }
 .hero-img-row img {
   width: calc(33.333% - 0.666rem);
-  height: 200px;
+  height: 280px;
   border-radius: var(--r-md);
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow-sm);
