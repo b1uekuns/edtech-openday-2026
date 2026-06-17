@@ -20,7 +20,7 @@
   }
 }
 .seminars-hero__content {
-  flex: 1;
+  flex: 1.2;
 }
 .seminars-hero__tag {
   color: #a855f7;
@@ -32,12 +32,19 @@
   text-transform: uppercase;
 }
 .seminars-hero__title {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-family: 'Cabinet Grotesk', sans-serif;
   color: #fff;
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .seminars-hero__title {
+    white-space: normal;
+    font-size: 2rem;
+  }
 }
 .seminars-hero__title .text-accent {
   background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
@@ -45,14 +52,15 @@
   -webkit-text-fill-color: transparent;
 }
 .seminars-hero__desc {
-  color: var(--subtle);
+  color: #fff;
   font-size: 1.1rem;
   line-height: 1.6;
+  margin-top: -0.5rem;
 }
 
 /* ── Hero Gallery ── */
 .seminars-hero__gallery {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   flex-direction: column;
   gap: 1rem;
