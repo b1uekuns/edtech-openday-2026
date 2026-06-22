@@ -81,7 +81,7 @@ function applyNavState() {
       }
       
       // Highlight "Hoạt động" if we are on one of its subpages
-      const activitiesPages = ["seminars.html", "boardgame.html", "gpbl.html", "openday.html", "taphuan.html", "hoatdongngoaikhoa.html", "viettel.html"];
+      const activitiesPages = ["seminars.html", "boardgame.html", "gpbl.html", "openday.html", "taphuan.html", "hoatdongngoaikhoa.html", "viettel.html", "fpt.html"];
       if (activitiesPages.some(page => currentPath.includes(page)) && link.dataset.section === "activities") {
         link.classList.add("active");
       }
