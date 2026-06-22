@@ -107,6 +107,21 @@
       .explore-title-decor::after {
         background: linear-gradient(-90deg, transparent, #a855f7);
       }
+
+      /* Override hero gallery image heights for this page */
+      .seminars-hero__content {
+        flex: 1 !important;
+      }
+      .seminars-hero__gallery {
+        flex: 1.4 !important;
+      }
+      .seminars-hero__gallery .hero-img-row img {
+        height: 180px !important;
+        border: 2px solid white !important; /* To match image 2 border if any */
+      }
+      .seminars-hero__gallery .hero-img-large {
+        border: 2px solid white !important;
+      }
     </style>
   </head>
   <body>
