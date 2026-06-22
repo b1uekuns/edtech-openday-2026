@@ -68,6 +68,11 @@ function applyNavState() {
         link.setAttribute("href", href.replace("index.html", ""));
       }
       if (link.dataset.section === "hero") {
+        const hash = window.location.hash;
+        if (!hash || hash === "#" || hash === "#hero") {
+          link.classList.add("active");
+        }
+      } else if (window.location.hash && link.dataset.section === window.location.hash.substring(1)) {
         link.classList.add("active");
       }
     } else {
