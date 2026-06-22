@@ -1,8 +1,12 @@
 /* openday.css */
 
 .openday-main {
-  padding-top: var(--header-height);
-  padding-bottom: 4rem;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /* Hero Section */
