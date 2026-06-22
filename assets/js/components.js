@@ -27,7 +27,6 @@ async function loadComponents() {
   ]);
 
   applyNavState();
-  initFakeVisitorCounter();
 }
 
 /* ── Load homepage sections ── */
@@ -75,38 +74,14 @@ function applyNavState() {
       if (href.includes("news.html") && currentPath.includes("news.html")) {
         link.classList.add("active");
       }
+      
+      // Highlight "Hoạt động" if we are on one of its subpages
+      const activitiesPages = ["seminars.html", "boardgame.html", "gpbl.html", "openday.html"];
+      if (activitiesPages.some(page => currentPath.includes(page)) && link.dataset.section === "activities") {
+        link.classList.add("active");
+      }
     }
   });
 }
 
-/* ── Fake Visitor Counter ── */
-function initFakeVisitorCounter() {
-  const counterEl = document.getElementById("visitor-count");
-  if (!counterEl) return;
-  
-  // Base date for calculation
-  const startDate = new Date("2026-01-01").getTime();
-  const now = new Date().getTime();
-  
-  const elapsedDays = Math.floor((now - startDate) / (1000 * 60 * 60 * 24));
-  
-  // Base calculation
-  const baseVisitors = 15342;
-  const dailyVisitors = elapsedDays * 125;
-  const hourlyVisitors = new Date().getHours() * 7;
-  const minutelyVisitors = Math.floor(new Date().getMinutes() / 3);
-  
-  let totalVisitors = baseVisitors + dailyVisitors + hourlyVisitors + minutelyVisitors;
-  
-  // Use localStorage to ensure it strictly increases during a user's session
-  const storedVisitors = localStorage.getItem("fakeVisitorCount");
-  if (storedVisitors) {
-    const parsedStored = parseInt(storedVisitors, 10);
-    if (parsedStored >= totalVisitors) {
-      totalVisitors = parsedStored + Math.floor(Math.random() * 3) + 1;
-    }
-  }
-  
-  localStorage.setItem("fakeVisitorCount", totalVisitors);
-  counterEl.textContent = totalVisitors.toLocaleString("vi-VN");
-}
+

@@ -17,6 +17,22 @@ document.addEventListener("DOMContentLoaded", async () => {
       window.location.pathname.endsWith("/");
     if (isHome) {
       await loadSections();
+      
+      // Handle hash navigation after dynamic sections are loaded
+      if (window.location.hash) {
+        setTimeout(() => {
+          const target = document.querySelector(window.location.hash);
+          if (target) {
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({
+                 top: offsetPosition,
+                 behavior: "smooth"
+            });
+          }
+        }, 100);
+      }
     }
   }
 
