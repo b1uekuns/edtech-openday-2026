@@ -93,3 +93,9 @@
 @media (max-width: 600px) {
   .cta-box { padding: 2rem 1.25rem; }
 }
+
+/* -- LIGHT THEME OVERRIDES -- */
+[data-theme='light'] .cta-box {
+  background: #ffffff;
+}
+

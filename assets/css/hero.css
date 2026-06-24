@@ -249,3 +249,31 @@
     display: none;
   }
 }
+
+/* -- LIGHT THEME OVERRIDES -- */
+[data-theme='light'] .float-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+[data-theme='light'] .float-card__sub { color: #64748b; }
+[data-theme='light'] .hero__btn--outline {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #0f172a;
+}
+[data-theme='light'] .hero__btn--outline:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: #0f172a;
+}
+[data-theme='light'] .hero__tag {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #475569;
+}
+[data-theme='light'] .video-overlay {
+  background: rgba(0, 0, 0, 0.15);
+}
+[data-theme='light'] .video-wrapper {
+  border: 2px solid rgba(0, 0, 0, 0.05);
+}
+

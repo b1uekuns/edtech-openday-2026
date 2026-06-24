@@ -193,3 +193,19 @@
   color: #0f172a;
 }
 
+
+[data-theme='light'] .nav__dropdown {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+[data-theme='light'] .nav__dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+[data-theme='light'] .nav__dropdown-title {
+  color: #0f172a;
+}
+[data-theme='light'] .nav__dropdown-desc {
+  color: #64748b;
+}
+

@@ -184,3 +184,43 @@
     text-align: center;
   }
 }
+
+/* -- LIGHT THEME OVERRIDES -- */
+[data-theme='light'] .footer {
+  background: #f8fafc;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: none;
+  color: #475569;
+}
+[data-theme='light'] .footer__text,
+[data-theme='light'] .footer__contact {
+  color: #475569;
+}
+[data-theme='light'] .footer__links a {
+  color: #64748b;
+}
+[data-theme='light'] .footer__links a:hover {
+  color: #0f172a;
+}
+[data-theme='light'] .footer__heading {
+  color: #0f172a;
+}
+[data-theme='light'] .social-btn {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #475569;
+}
+[data-theme='light'] .social-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: #0f172a;
+}
+[data-theme='light'] .b2t {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #475569;
+}
+[data-theme='light'] .b2t:hover {
+  background: #0f172a;
+  color: #ffffff;
+}
+
