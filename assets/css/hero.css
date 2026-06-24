@@ -277,3 +277,8 @@
   border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
+
+[data-theme='light'] .meta-row__icon img {
+  filter: invert(0.2) sepia(0.8) saturate(2) hue-rotate(200deg) brightness(0.5) !important;
+}
+

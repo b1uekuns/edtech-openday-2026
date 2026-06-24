@@ -209,3 +209,12 @@
   color: #64748b;
 }
 
+
+[data-theme='light'] .nav__cta {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  color: #ffffff;
+}
+[data-theme='light'] #theme-toggle img {
+  filter: none !important;
+}
+
