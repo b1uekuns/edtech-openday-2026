@@ -169,3 +169,27 @@
     display: none;
   }
 }
+
+/* -- LIGHT THEME OVERRIDES -- */
+[data-theme='light'] .nav {
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.02);
+}
+[data-theme='light'] .nav__link {
+  color: #475569;
+}
+[data-theme='light'] .nav__link:hover {
+  color: #5b6af5;
+}
+[data-theme='light'] .nav__link.active {
+  color: #0f172a;
+}
+[data-theme='light'] .theme-toggle {
+  color: #0f172a;
+}
+[data-theme='light'] .nav__logo-main,
+[data-theme='light'] .nav__logo-sub {
+  color: #0f172a;
+}
+
