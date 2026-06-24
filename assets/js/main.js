@@ -10,30 +10,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     await loadComponents();
   }
 
-  /* ── 2. Load homepage sections (only on index) ── */
-  if (typeof loadSections === "function") {
-    const isHome =
-      window.location.pathname.endsWith("index.html") ||
-      window.location.pathname.endsWith("/");
-    if (isHome) {
-      await loadSections();
-      
-      // Handle hash navigation after dynamic sections are loaded
-      if (window.location.hash) {
-        setTimeout(() => {
-          const target = document.querySelector(window.location.hash);
-          if (target) {
-            const headerOffset = 80;
-            const elementPosition = target.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-            window.scrollTo({
-                 top: offsetPosition,
-                 behavior: "smooth"
-            });
-          }
-        }, 100);
+  /* ── 2. Handle hash navigation (offset for sticky header) ── */
+  if (window.location.hash) {
+    setTimeout(() => {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
       }
-    }
+    }, 100);
   }
 
   /* ── 3. Initialise features ── */

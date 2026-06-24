@@ -29,24 +29,6 @@ async function loadComponents() {
   applyNavState();
 }
 
-/* ── Load homepage sections ── */
-async function loadSections() {
-  const sectionOrder = [
-    "hero",
-    "stats",
-    "activities",
-    "programs",
-    "schedule",
-    "recap",
-    // "faq",
-    "cta",
-  ];
-
-  // Load sections sequentially so order is guaranteed
-  for (const name of sectionOrder) {
-    await loadFragment(`section-${name}`, `sections/${name}.html`);
-  }
-}
 
 /* ── Post-load nav state (active links, href rewriting) ── */
 function applyNavState() {

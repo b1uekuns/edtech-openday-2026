@@ -65,14 +65,541 @@
       <div id="header-placeholder"></div>
 
       <!-- Sections (loaded by components.js → loadSections) -->
-      <div id="section-hero"></div>
-      <div id="section-stats"></div>
-      <div id="section-activities"></div>
-      <div id="section-programs"></div>
-      <div id="section-schedule"></div>
-      <div id="section-recap"></div>
+      
+      <!-- Inlined Section: hero -->
+      <!-- HERO -->
+      <section id="hero">
+        <div class="hero">
+          <!-- LEFT -->
+          <div class="hero__left rv">
+            <div class="live-badge">
+              <span class="live-dot" aria-hidden="true"></span>
+              EDTECH OPEN DAY 2026
+            </div>
+
+            <h1 class="hero__h1">
+              <span class="hero__h1-line">KẾT NỐI TRI THỨC</span>
+              <span class="hero__h1-line gradient-text">KIẾN TẠO TƯƠNG LAI</span>
+            </h1>
+
+            <p class="hero__desc">
+              Ngày hội mở dành cho học sinh, sinh viên và cộng đồng khám phá
+              Công nghệ giáo dục, trải nghiệm thực tế, kết nối doanh nghiệp và
+              định hướng tương lai.
+            </p>
+
+            <div class="hero__meta">
+              <div class="meta-row">
+                <div class="meta-row__icon" aria-hidden="true">
+                  <img src="assets/img/svg/calendar-days.svg" alt="" style="width: 14px; height: 14px; opacity: 0.9; filter: brightness(0) invert(1);" />
+                </div>
+                <div>
+                  <div class="meta-row__val">19.07.2026 · Chủ Nhật</div>
+                  <div class="meta-row__lbl">08:00 – 17:00</div>
+                </div>
+              </div>
+              <div class="meta-row">
+                <div class="meta-row__icon" aria-hidden="true">
+                  <img src="assets/img/svg/location-dot.svg" alt="" style="width: 14px; height: 14px; opacity: 0.9; filter: brightness(0) invert(1);" />
+                </div>
+                <div>
+                  <div class="meta-row__val">Hội trường B1</div>
+                  <div class="meta-row__lbl">Đại học Bách Khoa Hà Nội</div>
+                </div>
+              </div>
+              <div class="meta-row">
+                <div class="meta-row__icon" aria-hidden="true">
+                  <img src="assets/img/svg/user-group.svg" alt="" style="width: 14px; height: 14px; opacity: 0.9; filter: brightness(0) invert(1);" />
+                </div>
+                <div>
+                  <div class="meta-row__val">
+                    Học sinh, sinh viên &amp; cộng đồng
+                  </div>
+                  <div class="meta-row__lbl">Đối tượng tham dự</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__btns">
+              <a href="register.html" class="btn btn--primary">
+                🎟 Đăng ký tham gia →
+              </a>
+              <button class="btn btn--ghost" data-href="#schedule">
+                📅 Xem lịch trình
+              </button>
+            </div>
+
+            <!-- countdown (hidden by default) -->
+            <div class="countdown" aria-label="Đếm ngược đến sự kiện" style="display:none;">
+              <div class="countdown__block">
+                <div class="countdown__num" id="cd-days">00</div>
+                <div class="countdown__lbl">ngày</div>
+              </div>
+              <div class="countdown__sep" aria-hidden="true">:</div>
+              <div class="countdown__block">
+                <div class="countdown__num" id="cd-hours">00</div>
+                <div class="countdown__lbl">giờ</div>
+              </div>
+              <div class="countdown__sep" aria-hidden="true">:</div>
+              <div class="countdown__block">
+                <div class="countdown__num" id="cd-mins">00</div>
+                <div class="countdown__lbl">phút</div>
+              </div>
+              <div class="countdown__sep" aria-hidden="true">:</div>
+              <div class="countdown__block">
+                <div class="countdown__num" id="cd-secs">00</div>
+                <div class="countdown__lbl">giây</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT — visual -->
+          <div class="hero__right rv" aria-hidden="true">
+            <div class="hero__visual" id="hero-video-container" style="cursor: pointer;">
+              <video id="hero-video" src="assets/img/videogioithieu.mp4" playsinline style="width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; border-radius: inherit;" preload="metadata"></video>
+              <div class="hero__scan" id="hero-scan-overlay"></div>
+              <!-- Nút Play -->
+              <div id="play-video-btn" class="play-btn-overlay">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <!-- Inlined Section: stats -->
+      <!-- STATS BAND -->
+      <div class="stats-band rv" aria-label="Số liệu nổi bật">
+        <div class="stats-band__inner">
+          <div class="stat-item">
+            <div class="stat-item__icon">
+              <img src="assets/img/svg/star.svg" alt="Star" class="svg-icon">
+            </div>
+            <div class="stat-item__text">
+              <div class="stat__num">6+</div>
+              <div class="stat__lbl">Mùa Open Day<br>đã tổ chức</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__icon">
+              <img src="assets/img/svg/user-group.svg" alt="Users" class="svg-icon">
+            </div>
+            <div class="stat-item__text">
+              <div class="stat__num">10.000+</div>
+              <div class="stat__lbl">Lượt khách<br>tham dự</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__icon">
+              <img src="assets/img/svg/building-memo.svg" alt="Building" class="svg-icon">
+            </div>
+            <div class="stat-item__text">
+              <div class="stat__num">50+</div>
+              <div class="stat__lbl">Doanh nghiệp<br>đối tác</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__icon">
+              <img src="assets/img/svg/trophy-star.svg" alt="Trophy" class="svg-icon">
+            </div>
+            <div class="stat-item__text">
+              <div class="stat__num">100+</div>
+              <div class="stat__lbl">Hoạt động &amp;<br>hội thảo đã diễn ra</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <!-- Inlined Section: activities -->
+      <!-- HOẠT ĐỘNG NỔI BẬT -->
+      <section id="activities" class="section rv">
+        <div class="section__hd" style="text-align: center;">
+          <h2 class="section__title--decorated">✦ Hoạt động nổi bật ✦</h2>
+        </div>
+
+        <div class="act-grid">
+          <div class="act-card">
+            <div class="act-card__header">
+              <span class="act-card__num act-card__num--1">01</span>
+              <div class="act-card__name">Sự kiện Openday 2023 - 2026</div>
+            </div>
+            <div class="act-card__thumb act-card__thumb--1">
+              <img src="assets/img/hoatdongnoibat/sukienopenday.png" alt="Open Day lịch sử" />
+            </div>
+            <div class="act-card__body">
+              <div class="act-card__desc">
+                Nhìn lại những dấu ấn "Ấn tượng" qua các mùa Openday
+              </div>
+              <a href="openday.html" class="act-card__link act-card__link--1">Xem chi tiết <span class="arrow">→</span></a>
+            </div>
+          </div>
+
+          <div class="act-card">
+            <div class="act-card__header">
+              <span class="act-card__num act-card__num--2">02</span>
+              <div class="act-card__name">Hoạt động ngoại khoá</div>
+            </div>
+            <div class="act-card__thumb act-card__thumb--2">
+              <img src="assets/img/hoatdongnoibat/hoatdongngoaikhoa.png" alt="Trải nghiệm doanh nghiệp" />
+            </div>
+            <div class="act-card__body">
+              <div class="act-card__desc">
+                Tham quan, trải nghiệm môi trường làm việc thực tế tại các doanh nghiệp đối tác hàng đầu.
+              </div>
+              <a href="hoatdongngoaikhoa.html" class="act-card__link act-card__link--2">Xem chi tiết <span class="arrow">→</span></a>
+            </div>
+          </div>
+
+          <div class="act-card">
+            <div class="act-card__header">
+              <span class="act-card__num act-card__num--3">03</span>
+              <div class="act-card__name">Tập Huấn &amp; Bồi dưỡng kỹ năng</div>
+            </div>
+            <div class="act-card__thumb act-card__thumb--3">
+              <img src="assets/img/hoatdongnoibat/taphuanboiduong.png" alt="Tập huấn kỹ năng" />
+            </div>
+            <div class="act-card__body">
+              <div class="act-card__desc">
+                <ul>
+                  <li>Nâng cao kỹ năng mềm</li>
+                  <li>Trình độ chuyên môn</li>
+                  <li>Xác định mục tiêu định hướng</li>
+                </ul>
+              </div>
+              <a href="taphuan.html" class="act-card__link act-card__link--3">Xem chi tiết <span class="arrow">→</span></a>
+            </div>
+          </div>
+
+          <div class="act-card">
+            <div class="act-card__header">
+              <span class="act-card__num act-card__num--4">04</span>
+              <div class="act-card__name">Chương Trình Hội Thảo</div>
+            </div>
+            <div class="act-card__thumb act-card__thumb--4">
+              <img src="assets/img/hoatdongnoibat/chuongtrinhhoithao.png" alt="Chương trình hội thảo" />
+            </div>
+            <div class="act-card__body">
+              <div class="act-card__desc">
+                Khám phá chương trình hội thảo nghiên cứu và hợp tác quốc tế. Cập nhật xu hướng trong lĩnh vực giáo dục và công nghệ
+              </div>
+              <a href="seminars.html" class="act-card__link act-card__link--4">Xem chi tiết <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+
+      
+      <!-- Inlined Section: programs -->
+<!-- CHƯƠNG TRÌNH -->
+<section id="programs" class="section section--compact rv">
+  <div class="section__hd" style="text-align: center">
+    <h2 class="section__title--decorated">
+      ✦ KHÁM PHÁ CÁC CHƯƠNG TRÌNH TẠI OPEN DAY ✦
+    </h2>
+  </div>
+
+  <div class="prog-grid">
+    <div class="prog-card">
+      <div class="prog-card__head">
+        <div class="prog-card__icon prog-card__icon--1">
+          <img
+            src="assets/img/svg/briefcase.svg"
+            alt="Briefcase"
+            class="svg-icon"
+          />
+        </div>
+        <div class="prog-card__text">
+          <div class="prog-card__name prog-card__name--1">
+            Định hướng việc làm
+          </div>
+          <div class="prog-card__desc">
+            Cơ hội nghề nghiệp, kỹ năng cần thiết và lộ trình phát triển cho
+            sinh viên tương lai.
+          </div>
+        </div>
+      </div>
+      <div class="prog-card__img prog-card__img--1">
+        <img
+          src="assets/img/khamphachuongtrinh/dinhhuongvieclam.png"
+          alt="Định hướng việc làm"
+        />
+      </div>
+    </div>
+
+    <div class="prog-card">
+      <div class="prog-card__head">
+        <div class="prog-card__icon prog-card__icon--2">
+          <img
+            src="assets/img/svg/touch-1-filled.svg"
+            alt="Touch"
+            class="svg-icon"
+          />
+        </div>
+        <div class="prog-card__text">
+          <div class="prog-card__name prog-card__name--2">
+            Trải nghiệm các sản phẩm CNGD
+          </div>
+          <div class="prog-card__desc">
+            Khám phá và trực tiếp tương tác với các sản phẩm, dự án và giải pháp
+            công nghệ do giảng viên, sinh viên ngành Công nghệ Giáo dục phát
+            triển.
+          </div>
+        </div>
+      </div>
+      <div class="prog-card__img prog-card__img--2">
+        <img
+          src="assets/img/khamphachuongtrinh/trainghiemsanpham.png"
+          alt="Trải nghiệm sản phẩm"
+        />
+      </div>
+    </div>
+
+    <div class="prog-card">
+      <div class="prog-card__head">
+        <div class="prog-card__icon prog-card__icon--3">
+          <img src="assets/img/svg/gift.svg" alt="Gift" class="svg-icon" />
+        </div>
+        <div class="prog-card__text">
+          <div class="prog-card__name prog-card__name--3">
+            Cơ hội nhận nhiều phần quà hấp dẫn
+          </div>
+          <div class="prog-card__desc">
+            Tham gia các hoạt động minigame, check-in và trải nghiệm để nhận
+            những phần quà thú vị cùng nhiều ưu đãi đặc biệt từ chương trình.
+          </div>
+        </div>
+      </div>
+      <div class="prog-card__img prog-card__img--3">
+        <img src="assets/img/khamphachuongtrinh/cohoiqua.png" alt="Phần quà" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+      
+      <!-- Inlined Section: schedule -->
+      <!-- LỊCH TRÌNH -->
+      <section id="schedule" class="section section--compact rv">
+        <div class="section__hd">
+          <div class="eyebrow">Lịch trình</div>
+          <h2 class="section__title">Chương trình trong ngày</h2>
+          <p class="section__desc">
+            Từ 8h30 sáng đến 18h tối — mỗi khung giờ là một trải nghiệm được
+            thiết kế kỹ lưỡng.
+          </p>
+        </div>
+
+        <div class="sched-list">
+          <div class="sched-item sched-item--cyan">
+            <div class="sched-item__time">08:30 – 09:00</div>
+            <div>
+              <div class="sched-item__name">Đón tiếp &amp; Check-in</div>
+              <div class="sched-item__desc">
+                Nhận kit thành viên, kết nối cộng đồng trước giờ khai mạc chính
+                thức.
+              </div>
+              <span class="tag tag--amber">🎁 Welcome Kit</span>
+            </div>
+          </div>
+
+          <div class="sched-item sched-item--indigo">
+            <div class="sched-item__time">09:00 – 10:00</div>
+            <div>
+              <div class="sched-item__name">Khai mạc &amp; Keynote</div>
+              <div class="sched-item__desc">
+                Chia sẻ tầm nhìn CLB về EdTech và tương lai giáo dục số tại Việt
+                Nam.
+              </div>
+              <span class="tag tag--cyan">🎤 Keynote</span>
+            </div>
+          </div>
+
+          <div class="sched-item sched-item--violet">
+            <div class="sched-item__time">10:15 – 11:30</div>
+            <div>
+              <div class="sched-item__name">Workshop: AI trong Giáo dục</div>
+              <div class="sched-item__desc">
+                Hands-on với AI tools, prompt engineering và ứng dụng thực tế
+                cho sinh viên.
+              </div>
+              <span class="tag tag--indigo">🤖 Workshop</span>
+            </div>
+          </div>
+
+          <div class="sched-item sched-item--emerald">
+            <div class="sched-item__time">13:00 – 14:30</div>
+            <div>
+              <div class="sched-item__name">Demo Day: Sản phẩm CLB</div>
+              <div class="sched-item__desc">
+                Các nhóm trình bày sản phẩm EdTech — từ LMS đến mobile app học
+                tập.
+              </div>
+              <span class="tag tag--emerald">🚀 Demo</span>
+            </div>
+          </div>
+
+          <div class="sched-item sched-item--rose">
+            <div class="sched-item__time">14:45 – 16:00</div>
+            <div>
+              <div class="sched-item__name">Panel: Startup EdTech</div>
+              <div class="sched-item__desc">
+                Các founder chia sẻ hành trình xây dựng startup giáo dục — thất
+                bại và thành công.
+              </div>
+              <span class="tag tag--rose">💬 Panel</span>
+            </div>
+          </div>
+
+          <div class="sched-item sched-item--amber">
+            <div class="sched-item__time">16:30 – 18:00</div>
+            <div>
+              <div class="sched-item__name">Networking &amp; Bế mạc</div>
+              <div class="sched-item__desc">
+                Kết nối với mentor, nhà tuyển dụng và đồng đội tiềm năng trong
+                buổi networking mở.
+              </div>
+              <span class="tag tag--amber">🤝 Networking</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+
+      
+      <!-- Inlined Section: recap -->
+<!-- VR TOUR -->
+<section id="recap" class="section rv">
+  <div class="section__hd" style="text-align: center">
+    <h2 class="section__title--decorated">
+      <img
+        src="assets/img/svg/vr-cardboard.svg"
+        class="svg-icon"
+        style="
+          width: 32px;
+          height: 32px;
+          filter: invert(65%) sepia(40%) saturate(800%) hue-rotate(220deg)
+            brightness(100%) contrast(95%);
+          margin-right: 0.5rem;
+        "
+        alt="VR"
+      />
+      VR360 VIRTUAL TOUR &ndash; KHÁM PHÁ TRƯỜNG &amp; KHOA
+      <span style="color: var(--indigo); margin-left: 0.5rem">✦</span>
+    </h2>
+  </div>
+
+  <div class="vr-wrapper">
+    <div class="vr-grid">
+      <div class="recap-card recap-card--main" style="grid-column: span 1">
+        <div class="recap-card__thumb recap-card__thumb--1">
+          <div class="recap-card__scan"></div>
+          <button class="play-btn" aria-label="Khám phá">
+            <div class="play-btn__tri" aria-hidden="true"></div>
+          </button>
+          <img src="assets/img/vr/vr1.png" alt="HUST" />
+        </div>
+      </div>
+
+      <div class="recap-card recap-card--main" style="grid-column: span 1">
+        <div class="recap-card__thumb recap-card__thumb--2">
+          <div class="recap-card__scan"></div>
+          <button class="play-btn" aria-label="Khám phá">
+            <div class="play-btn__tri" aria-hidden="true"></div>
+          </button>
+          <img src="assets/img/vr/vr2.png" alt="Building" />
+        </div>
+      </div>
+    </div>
+
+    <div class="vr-features">
+      <div class="vr-feature">
+        <div class="vr-feature__icon">
+          <img
+            src="assets/img/svg/touch-1-filled.svg"
+            class="svg-icon"
+            alt="Touch"
+          />
+        </div>
+        <div class="vr-feature__text">Tương tác 360&deg;<br />chân thực</div>
+      </div>
+      <div class="vr-feature">
+        <div class="vr-feature__icon">
+          <img
+            src="assets/img/svg/user-group.svg"
+            class="svg-icon"
+            alt="User"
+          />
+        </div>
+        <div class="vr-feature__text">Tự do khám phá<br />mọi góc nhìn</div>
+      </div>
+      <div class="vr-feature">
+        <div class="vr-feature__icon">
+          <img
+            src="assets/img/svg/briefcase.svg"
+            class="svg-icon"
+            alt="Monitor"
+          />
+        </div>
+        <div class="vr-feature__text">Trải nghiệm trên mọi<br />thiết bị</div>
+      </div>
+      <div class="vr-feature">
+        <div class="vr-feature__icon">
+          <img src="assets/img/svg/gift.svg" class="svg-icon" alt="Gift" />
+        </div>
+        <div class="vr-feature__text">
+          Không cần cài đặt<br />đơn giản, dễ dùng
+        </div>
+      </div>
+
+      <div class="vr-action">
+        <a href="#" class="vr-btn">Bắt đầu khám phá ngay &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
       <!-- <div id="section-faq"></div> -->
-      <div id="section-cta"></div>
+      
+      <!-- Inlined Section: cta -->
+      <!-- CTA — ĐĂNG KÝ -->
+      <section
+        id="register"
+        class="section section--compact rv"
+        style="padding-bottom: 4rem"
+      >
+        <div class="cta-box">
+          <div class="cta-box__glow" aria-hidden="true"></div>
+          <h2 class="cta-box__title">Sẵn sàng chưa?</h2>
+          <p class="cta-box__sub">
+            Đăng ký ngay hôm nay — miễn phí, không điều kiện. Chỉ cần bạn có đam
+            mê.
+          </p>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="register.html" class="btn btn--primary" style="font-size: 1.1rem; padding: 1rem 2rem;">
+              Đăng ký tham gia ngay →
+            </a>
+          </div>
+        </div>
+      </section>
+
+
 
       <!-- Footer (loaded by components.js) -->
       <div id="footer-placeholder"></div>
